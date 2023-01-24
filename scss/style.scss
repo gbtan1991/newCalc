@@ -1,0 +1,129 @@
+@import 'global';
+@import 'reset';
+
+/* DARK - LIGHT MODE */
+
+.dark{color: $platinum;background-color: $raisin-black;}
+.light{color: $raisin-black;background-color: $white;}
+
+
+
+
+.container{
+    
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-weight: 700;
+
+    
+
+    .wrapper{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        max-width: 340px;
+
+        .mode{
+            width: 100px;   
+            height: 30px;
+            
+            
+            .switch{
+            background-color: $cultured;
+            border-radius: 30px;
+            width: inherit;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            }
+            
+        }
+
+        .output{
+
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 300px;
+            height: 100px;
+
+            .prevOperand{
+                font-size: 1.75rem;
+            }
+
+            .currOperand{
+                font-size: 2.5rem;
+                
+            }
+            
+
+        }
+
+        .keys{
+            background-color: $cultured;
+            font-size: 1.75rem;
+            width: 340px;
+            padding-top: 30px;
+            border-radius: 30px;
+
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: repeat(4, 70px);
+            grid-template-rows: minmax(50px, auto) repeat(5, 50px);
+            gap: 1px;
+
+            button{
+                border-radius: 20px;
+                background-color: $cultured-2;
+                border: 0;
+
+                &:hover{
+                    background-color: $platinum;
+                }
+                
+            }
+
+            .span-two{
+                grid-column: span 2;
+            }
+
+            .operator{
+                color: $light-coral-1;
+            }
+
+            .updating{
+                color: $sea-green-crayola;
+            }
+
+
+        }
+        
+    }
+    
+   
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
