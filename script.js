@@ -132,3 +132,13 @@ deleteButton.addEventListener('click', button =>{
     calculator.delete()
     calculator.updateDisplay()
 })
+
+
+
+
+///---------- DARK - LIGHT MODE SWITCH ---------- ///
+
+function toggleDarkLight(){
+    let body = document.getElementById('container');
+    let currentClass = container.className = currentClass == 'dark' ? 'light' : 'dark';
+}
